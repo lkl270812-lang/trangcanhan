@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(135deg, #f5a300, #ff6a00);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MENU */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 0 0 15px 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c63ff;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #6c63ff;
+    border-bottom: 2px solid #6c63ff;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+}
+
+.main {
+    padding-top: 110px;
+}
+
+/* KHUNG FORM */
+.form-box {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form-box h1 {
+    color: #6b5cff;
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #6b5cff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+ 
+ /* ===== FOOTER ===== */
+        .footer {
+            background: #ffffff;
+
+            margin-top: 50px;
+
+            padding: 20px 0;
+
+            text-align: center;
+
+            border-top: 2px solid #eee;
+
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+
+            border-radius: 15px 15px 0 0;
+        }
+
+        .social i {
+            font-size: 18px;
+
+            margin: 0 10px;
+
+            color: #6b5cff;
+
+            transition: 0.3s;
+        }
+
+        .social i:hover {
+            transform: translateY(-3px);
+        }
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<div class="navbar">
+
+    <div class="logo">
+        12C10
+    </div>
+
+    <div class="menu">
+        <a href="trang cá nhân.html">Trang Chủ</a>
+        <a href="gioithieu.html">Giới Thiệu</a>
+        <a href="dinhhuong.html">Định Hướng</a>
+        <a href="lienhe.html">Liên Hệ</a>
+    </div>
+
+</div>
+
+<!-- CONTENT -->
+<main>
+
+<div class="main">
+
+<div class="form-box">
+
+<h1>Biểu Mẫu Liên Hệ</h1>
+
+<!-- CHỖ QUAN TRỌNG: action -->
+<form action="thongtin.html">
+
+<div class="form-group">
+<label>Họ và tên</label>
+<input type="text" placeholder="Nhập họ và tên" required>
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" placeholder="Nhập email" required>
+</div>
+
+<div class="form-group">
+<label>Số điện thoại</label>
+<input type="tel" placeholder="Nhập số điện thoại">
+</div>
+
+<div class="form-group">
+<label>Nội dung</label>
+<textarea rows="4" placeholder="Nhập nội dung"></textarea>
+</div>
+
+<button type="submit" class="btn">
+Gửi thông tin
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+    <div class="footer">
+
+        <p>© 12C10-Le Bui Nguyen Anh</p>
+
+         <div class="social">
+   <div class="social">
+    <a href="https://www.facebook.com/nguyen.anh.622893" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.tiktok.com/@nguien_ahn08" target="_blank" ">
+        <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.youtube.com/@Nguy%C3%AAnAnh-t9r" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://www.instagram.com/nguynanh.ne/" target="_blank">
+         <i class="fab fa-instagram"></i>
+    </a>
+</div>
+
+</div>
+
+</body>
+</html>

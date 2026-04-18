@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang Bắt Đầu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5a300, #ff6a00);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== MENU ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 0 0 15px 15px;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c63ff;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #6c63ff;
+    border-bottom: 2px solid #6c63ff;
+}
+
+/* MAIN */
+.main {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.box {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+    animation: fadeIn 1s ease;
+}
+
+/* ẢNH CHÀO MỪNG */
+.welcome-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+}
+
+.welcome-img:hover {
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 22px;
+    border-radius: 25px;
+    background: #6b5cff;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* HIỆU ỨNG */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<div class="navbar">
+
+<div class="logo">
+12C10
+</div>
+
+<div class="menu">
+<a href="trang cá nhân.html">Trang Chủ</a>
+<a href="gioithieu.html">Giới Thiệu</a>
+<a href="dinhhuong.html">Định Hướng</a>
+<a href="lienhe.html">Liên Hệ</a>
+</div>
+
+</div>
+
+<!-- NỘI DUNG -->
+<div class="main">
+
+<div class="box">
+
+<!-- THAY CHỮ BẰNG ẢNH -->
+<img src="ảnh chào.gif" alt="Chào mừng" class="welcome-img">
+
+<p>
+XIN CHÀO 
+</p>
+
+<a href="trang cá nhân.html" class="btn">
+⬅ Quay lại
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

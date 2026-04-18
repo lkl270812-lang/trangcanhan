@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+
+    <!-- Font + Icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* BODY */
+        body {
+            background: linear-gradient(135deg, #f5a300, #ff6a00);
+
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== MENU ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            background: #ffffff;
+
+            padding: 15px 40px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            z-index: 1000;
+
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+            border-radius: 0 0 15px 15px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6c63ff;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: #6c63ff;
+            border-bottom: 2px solid #6c63ff;
+            padding-bottom: 4px;
+        }
+
+        /* MAIN */
+        main {
+            flex: 1;
+        }
+
+        .main {
+            padding-top: 100px;
+        }
+
+        /* KHUNG NỘI DUNG */
+        .video-box {
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 30px;
+        }
+
+        /* KHUNG VIDEO */
+        .video-container {
+            width: 500px;
+            height: 300px;
+
+            background: #e8c4d8;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-bottom: 20px;
+
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* TEXT */
+        h1 {
+            color: #6b5cff;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* BUTTON */
+        .btn {
+            display: inline-block;
+
+            padding: 10px 20px;
+
+            border-radius: 20px;
+
+            background: #6b5cff;
+
+            color: #fff;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: #ffffff;
+
+            margin-top: 50px;
+
+            padding: 20px 0;
+
+            text-align: center;
+
+            border-top: 2px solid #eee;
+
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+
+            border-radius: 15px 15px 0 0;
+        }
+
+        .social i {
+            font-size: 18px;
+
+            margin: 0 10px;
+
+            color: #6b5cff;
+
+            transition: 0.3s;
+        }
+
+        .social i:hover {
+            transform: translateY(-3px);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <div class="navbar">
+        <div class="logo">12C10</div>
+
+        <div class="menu">
+            <a href="trang cá nhân.html">Trang Chủ</a>
+            <a href="gioithieu.html">Giới Thiệu</a>
+            <a href="dinhhuong.html">Định Hướng</a>
+            <a href="lienhe.html">Liên Hệ</a>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <main>
+
+        <div class="main">
+
+            <div class="video-box">
+
+                <!-- VIDEO -->
+                <div class="video-container">
+
+                    <!-- Video từ máy -->
+                    <video controls>
+                        <source src="uhs.mp4" type="video/mp4">
+                        Trình duyệt không hỗ trợ video.
+                    </video>
+
+                </div>
+
+                <h1>Trường Đại Học Khoa Học Sức Khỏe-UHS</h1>
+
+                <p>
+                   Ngành Điều dưỡng tại Trường Đại học Khoa học Sức khỏe – Đại học Quốc gia TP.HCM là một trong những ngành đào tạo quan trọng trong lĩnh vực y tế, nhằm cung cấp nguồn nhân lực chất lượng cao cho hệ thống chăm sóc sức khỏe. Sinh viên theo học ngành Điều dưỡng được trang bị kiến thức chuyên môn về chăm sóc người bệnh, kỹ năng thực hành lâm sàng, giao tiếp với bệnh nhân và làm việc trong môi trường y tế chuyên nghiệp. Bên cạnh đó, chương trình đào tạo của trường còn chú trọng rèn luyện y đức, tinh thần trách nhiệm và thái độ tận tâm với người bệnh. Ngành Điều dưỡng tại UHS mở ra nhiều cơ hội việc làm sau khi tốt nghiệp, như làm việc tại bệnh viện, trung tâm y tế, cơ sở chăm sóc sức khỏe hoặc tiếp tục học nâng cao trong lĩnh vực y khoa..
+                </p>
+
+                <a href="trang cá nhân.html" class="btn">
+                    ⬅ Quay lại trang chính
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        <p>© 12C10-Le Bui Nguyen Anh</p>
+
+         <div class="social">
+   <div class="social">
+    <a href="https://www.facebook.com/nguyen.anh.622893" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.tiktok.com/@nguien_ahn08" target="_blank" ">
+        <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.youtube.com/@Nguy%C3%AAnAnh-t9r" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://www.instagram.com/nguynanh.ne/" target="_blank">
+         <i class="fab fa-instagram"></i>
+    </a>
+</div>
+
+    </div>
+
+</body>
+</html>
