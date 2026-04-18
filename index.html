@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Bong Portfolio</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f5a300;
+        }
+
+        /* ===== MENU ===== */
+        .navbar {
+            position: fixed; /* QUAN TRỌNG */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: transparent;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: none;
+			 box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+background: #ffffff;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6c63ff;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: #6c63ff;
+            border-bottom: 2px solid #6c63ff;
+            padding-bottom: 4px;
+        }
+
+        /* tránh bị menu đè */
+        .main {
+            padding-top: 100px;
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            background: #ffffff;
+            border-radius: 25px;
+            padding: 30px 40px;
+            margin: auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        /* HERO */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .image-box {
+            width: 320px;
+            height: 420px;
+            background: #e8c4d8;
+            border-radius: 160px 160px 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .image-box img {
+            width: 100%;
+        }
+
+        .content {
+            max-width: 500px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .content h1 {
+            font-size: 40px;
+            color: #6b5cff;
+        }
+
+        .content p {
+            font-size: 20px;
+            margin: 10px 0 20px;
+        }
+
+        .btn {
+            padding: 10px 22px;
+            border-radius: 25px;
+            border: 2px solid #6b5cff;
+            background: transparent;
+            color: #6b5cff;margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .btn.primary {
+		    display: inline-block;
+			margin-bottom: 10px;
+            background: #6b5cff;
+            color: #fff;
+			
+        }
+.btn.primary:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+        .social i {
+            font-size: 35px;
+            margin:10px;
+			cursor:pointer;
+            color: #6b5cff;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <div class="navbar">
+        <div class="logo">12C10</div>
+        <div class="menu">
+            <a href="#media">Trang Chủ</a>
+            <a href="gioithieu.html">Giới Thiệu</a>
+            <a href="dinhhuong.html">Định Hướng</a>
+            <a href="lienhe.html">Liên Hệ</a>
+        </div>
+    </div>
+
+    <!-- NỘI DUNG -->
+    <div class="main">
+        <div class="container">
+            <div class="hero">
+
+                <div class="image-box">
+                    <img src="ảnh 1.jpg" alt="ảnh ">
+                </div>
+
+                <div class="content">
+                    <small>Hi, I'm</small>
+                    <h1>LÊ BÙI NGUYÊN ANH </h1>
+                    <p>12C10</p>
+
+<a href="trang2.html" class="btn primary">
+Bắt đầu
+</a>
+
+                    <div class="social">
+   <div class="social">
+    <a href="https://www.facebook.com/nguyen.anh.622893" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.tiktok.com/@nguien_ahn08" target="_blank" ">
+        <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://www.youtube.com/@Nguy%C3%AAnAnh-t9r" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://www.instagram.com/nguynanh.ne/" target="_blank">
+         <i class="fab fa-instagram"></i>
+    </a>
+</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
